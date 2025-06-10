@@ -3,30 +3,58 @@ import * as React from "react";
 import { IconSvgProps } from "@/types";
 
 export const Logo: React.FC<IconSvgProps> = ({
-  size = 36,
-  width,
-  height,
-  ...props
 }) => (
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-labelledby="robologoTitle robologoDesc" role="img">
-  <title id="robologoTitle">Robotics Portfolio Logo</title>
-  <desc id="robologoDesc">A stylized robotic face with antennae, eyes, and mouth, designed with geometric lines and circles for a tech aesthetic.</desc>
-  <circle cx="60" cy="60" r="44" stroke="white" stroke-width="3" fill="none"/>
-  <circle cx="60" cy="60" r="32" stroke="white" stroke-width="2" fill="none"/>
-  <circle cx="46" cy="60" r="5" fill="white"/>
-  <circle cx="74" cy="60" r="5" fill="white"/>
-  <circle cx="48" cy="58" r="1.2" fill="black" opacity="0.7"/>
-  <circle cx="76" cy="58" r="1.2" fill="black" opacity="0.7"/>
-  <rect x="53" y="80" width="14" height="4" rx="2" fill="white"/>
-  <ellipse cx="60" cy="92" rx="12" ry="4" stroke="white" stroke-width="2" fill="none"/>
-  <rect x="28" y="29" width="3" height="16" rx="1.5" fill="white" transform="rotate(-20 28 29)"/>
-  <circle cx="29.5" cy="26.5" r="3" fill="white"/>
-  <rect x="89" y="29" width="3" height="16" rx="1.5" fill="white" transform="rotate(20 89 29)"/>
-  <circle cx="90.5" cy="26.5" r="3" fill="white"/>
-  <rect x="57" y="32" width="6" height="9" rx="3" fill="white" />
-  <rect x="38" y="72" width="2" height="8" rx="1" fill="white" />
-  <rect x="80" y="72" width="2" height="8" rx="1" fill="white" />
-</svg>
+  <svg
+    aria-labelledby="robologoTitle robologoDesc"
+    role="img"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title id="robologoTitle">Robotics Portfolio Logo</title>
+    <desc id="robologoDesc">
+      A stylized robotic face with antennae, eyes, and mouth, designed with
+      geometric lines and circles for a tech aesthetic.
+    </desc>
+    <circle cx="60" cy="60" fill="none" r="44" stroke="white" strokeWidth="3" />
+    <circle cx="60" cy="60" fill="none" r="32" stroke="white" strokeWidth="2" />
+    <circle cx="46" cy="60" fill="white" r="5" />
+    <circle cx="74" cy="60" fill="white" r="5" />
+    <circle cx="48" cy="58" fill="black" opacity="0.7" r="1.2" />
+    <circle cx="76" cy="58" fill="black" opacity="0.7" r="1.2" />
+    <rect fill="white" height="4" rx="2" width="14" x="53" y="80" />
+    <ellipse
+      cx="60"
+      cy="92"
+      fill="none"
+      rx="12"
+      ry="4"
+      stroke="white"
+      strokeWidth="2"
+    />
+    <rect
+      fill="white"
+      height="16"
+      rx="1.5"
+      transform="rotate(-20 28 29)"
+      width="3"
+      x="28"
+      y="29"
+    />
+    <circle cx="29.5" cy="26.5" fill="white" r="3" />
+    <rect
+      fill="white"
+      height="16"
+      rx="1.5"
+      transform="rotate(20 89 29)"
+      width="3"
+      x="89"
+      y="29"
+    />
+    <circle cx="90.5" cy="26.5" fill="white" r="3" />
+    <rect fill="white" height="9" rx="3" width="6" x="57" y="32" />
+    <rect fill="white" height="8" rx="1" width="2" x="38" y="72" />
+    <rect fill="white" height="8" rx="1" width="2" x="80" y="72" />
+  </svg>
 );
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({

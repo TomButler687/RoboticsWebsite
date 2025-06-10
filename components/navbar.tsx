@@ -1,11 +1,8 @@
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
-  NavbarMenu,
-  NavbarMenuToggle,
   NavbarBrand,
   NavbarItem,
-  NavbarMenuItem,
 } from "@heroui/navbar";
 import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
@@ -14,7 +11,6 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
-
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -40,9 +36,6 @@ export const Navbar = () => {
           ))}
         </ul>
       </NavbarContent>
-
-
-      
     </HeroUINavbar>
   );
 };
